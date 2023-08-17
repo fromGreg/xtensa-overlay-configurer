@@ -23,7 +23,7 @@ check_if_valid_board()
         fi
     done
 
-    echo "Error!"
+    echo "Specified board is unknown, aborting..."
     exit 1
 }
 
@@ -73,8 +73,8 @@ combine()
     cp "$tie" "$linux_target"/tie.h
     cp "$tie_asm" "$linux_target"/tie-asm.h
 
-    echo "Tar all files together into ./output/xtensa_"$BOARD"_overlay.tar.gz..."
-    tar -czf "$OUT_DIR"/xtensa_"$BOARD"_overlay.tar.gz -C "$TMP" .
+    echo "Tar all files together into ./output/xtensa-"$BOARD"-overlay.tar.gz..."
+    tar -czf "$OUT_DIR"/xtensa-"$BOARD"-overlay.tar.gz -C "$TMP" .
     echo "Finished successfully!"
     exit 0
 }
