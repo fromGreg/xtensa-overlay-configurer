@@ -1,0 +1,7 @@
+[submodule "esp-hal-components"]
+	path = esp-hal-components
+	url = https://github.com/espressif/esp-hal-components.git
+	branch = sync-3-master
+[submodule "xtensa-overlays"]
+	path = xtensa-overlays
+	url = https://github.com/espressif/xtensa-overlays.git
